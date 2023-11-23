@@ -116,6 +116,20 @@ function sideMenu(...quranSurahNames) {
 }
 
 
+let btnOpen = document.getElementById("btnTop");
+let closebtnEl =  document.getElementById("closeBtn");
+
+
+const toggleBtn = ()=>{
+    document.getElementById("sub-1").classList.toggle("ol-btn");
+    document.getElementById("btnTop").classList.toggle("open-btn");
+    document.getElementById("closeBtn").classList.toggle("close-btn");
+}
+
+btnOpen.addEventListener("click" , toggleBtn);
+closebtnEl.addEventListener("click" , toggleBtn);
+
+
 // Scroll to top 
 const upBtn = document.getElementById('top');
 const sub2 = document.getElementById('sub-2');
@@ -136,3 +150,4 @@ function scrollDown() {
     sub2.scrollTo({ top: scrollHeight, behavior: 'smooth' });
 }
 topBtn.addEventListener('click',scrollDown)
+
