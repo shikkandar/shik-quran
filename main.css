@@ -5,7 +5,10 @@ body{
     color: #0e7545;
     text-decoration: underline ;
 }
+
+
 .ol{
+   
     padding: 0 50px;
     background-color: #0e7545;
     color: #fff;
@@ -14,6 +17,17 @@ body{
     max-height: 100vh;
     overflow:auto;
     padding-bottom: 200px;
+}
+.ol-btn{
+    display: block;
+}
+.open-btn{
+    display: none;
+}
+.close-btn{
+    display: block;
+    z-index: 999;
+
 }
 .sub-2{
     height: 100vh;
@@ -68,5 +82,31 @@ svg:hover{
 @media (max-width:1500px) {
     .sub-2{
         padding: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .ol-btn{
+        display: none;
+    }
+
+    .open-btn{
+        display: none;
+    }
+    .colse-btn{
+        display: none;
+
+    }
+
+}
+@media (min-width: 831px) {
+    .open-btn{
+        display: none;
+    }
+    #btnTop{
+        display: none;
+    }
+    #closeBtn{
+        display: none;
     }
 }
