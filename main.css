@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+#head{
+    color: #0e7545;
+    text-decoration: underline ;
+}
+.ol{
+    padding: 0 50px;
+    background-color: #0e7545;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    max-height: 100vh;
+    overflow:auto;
+}
+.sub-2{
+    height: 100vh;
+    overflow: auto; 
+    padding: 0 100px;
+}
+li{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff0000; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+  }
+  
+
+@media (max-width:1500px) {
+    .sub-2{
+        padding: 0;
+    }
+}
