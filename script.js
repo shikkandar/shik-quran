@@ -64,127 +64,16 @@ function pagination(len) {
 
 //Surah names
 const quranSurahNames = [
-    'Al-Fatiha',
-    'Al-Baqara',
-    'Aal-E-Imran',
-    'An-Nisa',
-    'Al-Ma\'ida',
-    'Al-An\'am',
-    'Al-A\'raf',
-    'Al-Anfal',
-    'At-Tawbah',
-    'Yunus',
-    'Hud',
-    'Yusuf',
-    'Ar-Ra\'d',
-    'Ibrahim',
-    'Al-Hijr',
-    'An-Nahl',
-    'Al-Isra',
-    'Al-Kahf',
-    'Maryam',
-    'Ta-Ha',
-    'Al-Anbiya',
-    'Al-Hajj',
-    'Al-Muminun',
-    'An-Nur',
-    'Al-Furqan',
-    'Ash-Shu\'ara',
-    'An-Naml',
-    'Al-Qasas',
-    'Al-Ankabut',
-    'Ar-Rum',
-    'Luqman',
-    'As-Sajda',
-    'Al-Ahzab',
-    'Saba',
-    'Fatir',
-    'Ya-Sin',
-    'As-Saffat',
-    'Sad',
-    'Az-Zumar',
-    'Ghafir',
-    'Fussilat',
-    'Ash-Shura',
-    'Az-Zukhruf',
-    'Ad-Dukhan',
-    'Al-Jathiya',
-    'Al-Ahqaf',
-    'Muhammad',
-    'Al-Fath',
-    'Al-Hujurat',
-    'Qaf',
-    'Adh-Dhariyat',
-    'At-Tur',
-    'An-Najm',
-    'Al-Qamar',
-    'Ar-Rahman',
-    'Al-Waqia',
-    'Al-Hadid',
-    'Al-Mujadila',
-    'Al-Hashr',
-    'Al-Mumtahina',
-    'As-Saff',
-    'Al-Jumu\'a',
-    'Al-Munafiqun',
-    'At-Taghabun',
-    'At-Talaq',
-    'At-Tahrim',
-    'Al-Mulk',
-    'Al-Qalam',
-    'Al-Haaqqa',
-    'Al-Maarij',
-    'Nuh',
-    'Al-Jinn',
-    'Al-Muzzammil',
-    'Al-Muddathir',
-    'Al-Qiyama',
-    'Al-Insan',
-    'Al-Mursalat',
-    'An-Naba',
-    'An-Nazi\'at',
-    'Abasa',
-    'At-Takwir',
-    'Al-Infitar',
-    'Al-Mutaffifin',
-    'Al-Inshiqaq',
-    'Al-Burooj',
-    'At-Tariq',
-    'Al-Ala',
-    'Al-Ghashiya',
-    'Al-Fajr',
-    'Al-Balad',
-    'Ash-Shams',
-    'Al-Lail',
-    'Adh-Dhuha',
-    'Ash-Sharh',
-    'At-Tin',
-    'Al-Alaq',
-    'Al-Qadr',
-    'Al-Bayyina',
-    'Az-Zalzalah',
-    'Al-Adiyat',
-    'Al-Qaria',
-    'At-Takathur',
-    'Al-Asr',
-    'Al-Humazah',
-    'Al-Fil',
-    'Quraish',
-    'Al-Ma\'un',
-    'Al-Kawthar',
-    'Al-Kafiroon',
-    'An-Nasr',
-    'Al-Masad',
-    'Al-Ikhlas',
-    'Al-Falaq',
-    'An-Nas'
+    'Al-Fatiha', 'Al-Baqara', 'Aal-E-Imran', 'An-Nisa', 'Al-Ma\'ida', 'Al-An\'am', 'Al-A\'raf', 'Al-Anfal', 'At-Tawbah', 'Yunus', 'Hud', 'Yusuf', 'Ar-Ra\'d', 'Ibrahim', 'Al-Hijr', 'An-Nahl', 'Al-Isra', 'Al-Kahf', 'Maryam', 'Ta-Ha', 'Al-Anbiya', 'Al-Hajj', 'Al-Muminun', 'An-Nur', 'Al-Furqan', 'Ash-Shu\'ara', 'An-Naml', 'Al-Qasas', 'Al-Ankabut', 'Ar-Rum', 'Luqman', 'As-Sajda', 'Al-Ahzab', 'Saba', 'Fatir', 'Ya-Sin', 'As-Saffat', 'Sad', 'Az-Zumar', 'Ghafir', 'Fussilat', 'Ash-Shura', 'Az-Zukhruf', 'Ad-Dukhan', 'Al-Jathiya', 'Al-Ahqaf', 'Muhammad', 'Al-Fath', 'Al-Hujurat', 'Qaf', 'Adh-Dhariyat', 'At-Tur', 'An-Najm', 'Al-Qamar', 'Ar-Rahman', 'Al-Waqia', 'Al-Hadid', 'Al-Mujadila', 'Al-Hashr', 'Al-Mumtahina', 'As-Saff', 'Al-Jumu\'a', 'Al-Munafiqun', 'At-Taghabun', 'At-Talaq', 'At-Tahrim', 'Al-Mulk', 'Al-Qalam', 'Al-Haaqqa', 'Al-Maarij', 'Nuh', 'Al-Jinn', 'Al-Muzzammil', 'Al-Muddathir', 'Al-Qiyama', 'Al-Insan', 'Al-Mursalat', 'An-Naba', 'An-Nazi\'at', 'Abasa', 'At-Takwir', 'Al-Infitar', 'Al-Mutaffifin', 'Al-Inshiqaq', 'Al-Burooj', 'At-Tariq', 'Al-Ala', 'Al-Ghashiya', 'Al-Fajr', 'Al-Balad', 'Ash-Shams', 'Al-Lail', 'Adh-Dhuha', 'Ash-Sharh', 'At-Tin', 'Al-Alaq', 'Al-Qadr', 'Al-Bayyina', 'Az-Zalzalah', 'Al-Adiyat', 'Al-Qaria', 'At-Takathur', 'Al-Asr', 'Al-Humazah', 'Al-Fil', 'Quraish', 'Al-Ma\'un', 'Al-Kawthar', 'Al-Kafiroon', 'An-Nasr', 'Al-Masad', 'Al-Ikhlas', 'Al-Falaq', 'An-Nas'
 ];
-
+const arabicSuraNames = [
+    'الفاتحة', 'البقرة', 'آل عمران', 'النساء', 'المائدة', 'الأنعام', 'الأعراف', 'الأنفال', 'التوبة', 'يونس', 'هود', 'يوسف', 'الرعد', 'إبراهيم', 'الحجر', 'النحل', 'الإسراء', 'الكهف', 'مريم', 'طه', 'الأنبياء', 'الحج', 'المؤمنون', 'النور', 'الفرقان', 'الشعراء', 'النمل', 'القصص', 'العنكبوت', 'الروم', 'لقمان', 'السجدة', 'الأحزاب', 'سبأ', 'فاطر', 'يس', 'الصافات', 'ص', 'الزمر', 'غافر', 'فصلت', 'الشورى', 'الزخرف', 'الدخان', 'الجاثية', 'الأحقاف', 'محمد', 'الفتح', 'الحشر', 'الممتحنة', 'الصف', 'الجمعة', 'المنافقون', 'التغابن', 'الطلاق', 'التحريم', 'الملك', 'القلم', 'الحاقة', 'المعارج', 'نوح', 'الجن', 'المزمل', 'المدثر', 'القيامة', 'الإنسان', 'المرسلات', 'النبأ', 'النازعات', 'عبس', 'التكوير', 'الإنفطار', 'المطففين', 'الإنشقاق', 'البروج', 'الطارق', 'الأعلى', 'الغاشية', 'الفجر', 'البلد', 'الشمس', 'الليل', 'الضحى', 'الشرح', 'التين', 'العلق', 'القدر', 'البينة', 'الزلزلة', 'العاديات', 'القارعة', 'التكاثر', 'العصر', 'الهمزة', 'الفيل', 'قريش', 'الماعون', 'الكوثر', 'الكافرون', 'النصر', 'المسد', 'الإخلاص', 'الفلق', 'الناس'
+];
 // Example usage
 
-
+//funtion for changing surah head
 const head=document.getElementById('head')
-head.innerHTML=`<h3>${quranSurahNames[surahNumber-1]}<h3/>`;
+head.innerHTML = `<h3>${quranSurahNames[surahNumber - 1]}-${arabicSuraNames[surahNumber - 1]} <h3/>`;
 document.getElementById('inpuBtn').addEventListener('click', () => {
     const input = document.getElementById('input');
 
@@ -192,7 +81,7 @@ document.getElementById('inpuBtn').addEventListener('click', () => {
     if (input.value >= 1 && input.value <= 114) {
         surahNumber = input.value;
         currentPage=1;
-        head.innerHTML=`<h3 class="head-text">${quranSurahNames[surahNumber-1]}<h3/>`;
+        head.innerHTML = `<h3>${quranSurahNames[surahNumber - 1]}-${arabicSuraNames[surahNumber - 1]} <h3/>`;
         input.value = '';
         apiData(); // Fetch and display updated data
     }else alert("Enter a valid surah")
@@ -201,6 +90,8 @@ document.getElementById('inpuBtn').addEventListener('click', () => {
 // Example usage
 apiData();
 
+
+//Funtion for sidemenu and and changing surah head and content of surah
 sideMenu(...quranSurahNames)
 function sideMenu(...quranSurahNames) {
     const sideMenuContainer=document.getElementById("sub-1")
@@ -216,10 +107,32 @@ function sideMenu(...quranSurahNames) {
         currentPage=1;
         surahNumber=i+1;
         console.log(currentPage);
-        head.innerHTML = `<h3 class="head-text">${quranSurahNames[surahNumber - 1]}<h3/>`;
+        head.innerHTML = `<h3>${quranSurahNames[surahNumber - 1]}-${arabicSuraNames[surahNumber - 1]} <h3/>`;
         apiData()
        })
        
     })
    
 }
+
+
+// Scroll to top 
+const upBtn = document.getElementById('top');
+const sub2 = document.getElementById('sub-2');
+
+function scrollTop() {
+    sub2.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+upBtn.addEventListener('click', scrollTop);
+
+
+//scroll down
+
+const topBtn=document.getElementById('down')
+
+function scrollDown() {
+    const scrollHeight = sub2.scrollHeight;
+    sub2.scrollTo({ top: scrollHeight, behavior: 'smooth' });
+}
+topBtn.addEventListener('click',scrollDown)
